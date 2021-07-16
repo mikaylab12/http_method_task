@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your selected items</title>
+</head>
+<body style="background-color:#ac5bfc">
+<h1 style="font:sans-serif, color:white;">Here is the shopping list items</h1>
+<br>
+<table style="background-color:white;" border="7">
+
+    <tr style="font:sans-serif, font-size:20;"><th>Unit</th><th>Details</th></tr>
+{% for x, y in result.items(): %}
+<tr>
+  <td style="width:100px;">{{x}}</td><td style="width:100px;">{{y}}</td>
+
+{%endfor%}
+</table>
+</body>
+</html>
